@@ -114,10 +114,9 @@ class pixelsPanel extends JPanel implements MouseListener, MouseMotionListener {
 
     public void updateStatus(int x, int y) {
         if (x > 0 && x < image.getWidth() && y > 0 && y < image.getHeight()) {
-            int RGB = getPixelRGB(x, y);
-            statusBarInterface.setValues(x, y, new Color(RGB));
+            statusBarInterface.setValues(x, y, new Color(image.getRGB(x, y)));
         } else {
-            statusBarInterface.setValues(-1, -1, Color.RED);
+            statusBarInterface.setValues(-1, -1, Color.WHITE);
         }
         repaint();
     }
@@ -154,10 +153,7 @@ class pixelsPanel extends JPanel implements MouseListener, MouseMotionListener {
     }
 
     public int getPixelRGB(int x, int y) {
-        //if (x > 0 && x < image.getWidth() && y > 0 && y < image.getHeight()) {
         return image.getRGB(x, y);
-        //}
-        //return 0;
     }
 
     public static Color randomColor() {
@@ -237,15 +233,6 @@ class statusBarPanel extends JPanel {
             String rgb = "(" + Integer.toString(color.getRed()) + "," + Integer.toString(color.getGreen()) + "," + Integer.toString(color.getBlue()) + ")";
             myLabel.setText("X:" + Integer.toString(x) + ", Y:" + Integer.toString(y) + ", Color:" + rgb);
         }
-    }
-
-    @Override
-    public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        //Graphics2D g2 = (Graphics2D) g;
-        //g2.setColor(Color.YELLOW);
-        //g2.fillRect(0, 0, javaWorkshop_RandomImage.WIDTH, javaWorkshop_RandomImage.HEIGHT - javaWorkshop_RandomImage.HEIGHT_bar);
-        //this.setBackground(Color.CYAN);
     }
 }
 
