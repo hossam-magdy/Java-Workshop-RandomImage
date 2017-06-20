@@ -16,7 +16,7 @@ import javax.swing.*;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 
-public class javaWorkShop_RandomImage implements StatusInterface {
+public class javaWorkshop_RandomImage implements StatusInterface {
 
     private JFrame myFrame;
     private pixelsPanel pixelsPanel;
@@ -25,7 +25,7 @@ public class javaWorkShop_RandomImage implements StatusInterface {
     public static int HEIGHT = 600;
     public static int HEIGHT_bar = 25;
 
-    public javaWorkShop_RandomImage() {
+    public javaWorkshop_RandomImage() {
 
         myFrame = new JFrame();
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -74,7 +74,7 @@ public class javaWorkShop_RandomImage implements StatusInterface {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new javaWorkShop_RandomImage();
+        new javaWorkshop_RandomImage();
     }
 
     @Override
@@ -221,7 +221,7 @@ class statusBarPanel extends JPanel {
 
     statusBarPanel() {
         myLabel = new JLabel("", JLabel.LEFT);
-        myLabel.setBorder(new CompoundBorder(null, new EmptyBorder(0, javaWorkShop_RandomImage.HEIGHT_bar / 3, 0, 0)));
+        myLabel.setBorder(new CompoundBorder(null, new EmptyBorder(0, javaWorkshop_RandomImage.HEIGHT_bar / 3, 0, 0)));
         this.setLayout(new BorderLayout());
         this.add(myLabel);
     }
@@ -244,7 +244,7 @@ class statusBarPanel extends JPanel {
         super.paintComponent(g);
         //Graphics2D g2 = (Graphics2D) g;
         //g2.setColor(Color.YELLOW);
-        //g2.fillRect(0, 0, javaWorkShop_RandomImage.WIDTH, javaWorkShop_RandomImage.HEIGHT - javaWorkShop_RandomImage.HEIGHT_bar);
+        //g2.fillRect(0, 0, javaWorkshop_RandomImage.WIDTH, javaWorkshop_RandomImage.HEIGHT - javaWorkshop_RandomImage.HEIGHT_bar);
         //this.setBackground(Color.CYAN);
     }
 }
