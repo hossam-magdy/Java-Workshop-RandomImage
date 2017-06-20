@@ -36,30 +36,6 @@ public class JavaApplication2 {
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myFrame.setSize(new Dimension(WIDTH, HEIGHT));
 
-        /*
-        GridBagLayout layout = new GridBagLayout();
-
-        myFrame.setLayout(layout);
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.fill = GridBagConstraints.CENTER;
-        gbc.ipadx = WIDTH;
-        gbc.ipady = HEIGHT - HEIGHT_bar;
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        customPanel myPanel = new customPanel();
-        //myPanel.setSize(new Dimension(WIDTH, HEIGHT - HEIGHT_bar));
-        //myPanel.setMinimumSize(new Dimension(WIDTH, HEIGHT - HEIGHT_bar));
-        //myFrame.add(new JButton("OK22222"), gbc);
-        //myFrame.add(new JButton("1111"), gbc);
-        myFrame.add(myPanel, gbc);
-
-        gbc.fill = GridBagConstraints.CENTER;
-        gbc.ipady = HEIGHT_bar;
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        myFrame.add(new JButton("2222"), gbc);
-         */
-        ///* BorderLayout
         myFrame.setLayout(new BorderLayout());
 
         pixelsPanel pixelsPanel = new pixelsPanel();
@@ -72,58 +48,6 @@ public class JavaApplication2 {
 
         myFrame.setVisible(true);
 
-        /*
-        //JPanel pixelsPanel = new JPanel(new BorderLayout());
-        //JPanel statusPanel = new JPanel(new BorderLayout());
-        //myFrame.add(myPanel, BorderLayout.CENTER);
-        JButton btn1 = new JButton("1111");
-        pixelsPanel.setPreferredSize(new Dimension(WIDTH, 500));
-        pixelsPanel.add(btn1);
-
-        JButton btn2 = new JButton("2222");
-        //statusBarPanel.add(btn2);
-         */
-        // */
-        /*
-        myFrame.setLayout(new FlowLayout());
-        JButton btn2 = new JButton("1111");
-        btn2.setPreferredSize(new Dimension(WIDTH, 200));
-        btn2.setLocation(0, 0);
-        //btn2.setSize(250, 500);
-        //btn2.setBounds(250, 500, 50, 60);
-        myFrame.add(btn2);
-         */
-
- /*
-
-        /*
-        BorderLayout layout = new BorderLayout();
-        myFrame.setLayout(layout);
-
-        myFrame.add(new JButton("1111"), BorderLayout.CENTER);
-        myFrame.add(btn2, BorderLayout.PAGE_END);
-         */
- /*
-
-
-//        BorderLayout layout = new BorderLayout();
-
-        /*
-        myCanvas = new Canvas();
-        myCanvas.setSize(WIDTH, HEIGHT - HEIGHT_bar);
-        //Graphics g = new Graphics
-        //myCanvas.paint(g);
-        //myFrame.add(myCanvas);
-         */
-        // To actually close the application after closing the myFrame
-        /*
-        myFrame.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent windowEvent) {
-                System.exit(0);
-            }
-        });
-         */
     }
 
     /**
