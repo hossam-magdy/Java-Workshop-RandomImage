@@ -63,6 +63,9 @@ public class javaWorkShop_RandomImage implements StatusInterface {
         pixelsPanel.setPreferredSize(new Dimension(WIDTH, HEIGHT - HEIGHT_bar));
         myFrame.add(pixelsPanel);
 
+        // Show message dialog
+        JOptionPane.showMessageDialog(myFrame, "Welcome to: Java-Workshop-RandomImage");
+
         myFrame.setVisible(true);
 
     }
